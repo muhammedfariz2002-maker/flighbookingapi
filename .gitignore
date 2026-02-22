@@ -1,0 +1,11 @@
+.vs/
+bin/
+obj/
+*.user
+*.cache
+*.log
+# Environment-specific config (secrets)
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.Development.json
+appsettings.json
