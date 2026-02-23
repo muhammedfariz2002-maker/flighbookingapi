@@ -141,8 +141,8 @@ namespace FlightBookingApi.Controllers
         }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Stripe webhook failed");
-                return Ok(); // temporary
+                _logger.LogError(ex, "Stripe webhook failed: {Message}", ex.Message);
+                return BadRequest(ex.Message);
             }
         }
 }

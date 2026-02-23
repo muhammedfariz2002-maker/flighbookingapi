@@ -80,7 +80,13 @@ namespace FlightBookingApi.Services
     "Pricing confirmed. BookingId {BookingId} moved to AwaitingPayment",
     booking.Id);
 
-                booking.FlightOfferJson = request.FlightOffer.GetRawText();
+                using var pricingDoc = JsonDocument.Parse(pricingResponse);
+
+                var pricedOffer = pricingDoc.RootElement
+                    .GetProperty("data")
+                    .GetProperty("flightOffers")[0];
+
+                booking.FlightOfferJson = pricedOffer.GetRawText();
                 booking.TravelerJson = JsonSerializer.Serialize(request.Traveler);
                 booking.ContactJson = JsonSerializer.Serialize(request.Contact);
 

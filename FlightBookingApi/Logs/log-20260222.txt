@@ -1,20 +1,15 @@
-2026-02-22 20:05:49.258 +05:30 [INF] Starting booking creation for FlightOfferId 1
-2026-02-22 20:05:50.293 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Booking'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
-2026-02-22 20:05:51.791 +05:30 [INF] Booking saved as Pending with BookingId 5
-2026-02-22 20:05:51.798 +05:30 [INF] Calling Amadeus pricing API for BookingId 5
-2026-02-22 20:05:53.800 +05:30 [INF] Pricing confirmed. BookingId 5 moved to AwaitingPayment
-2026-02-22 20:06:20.993 +05:30 [INF] Creating Stripe session for BookingId 5
-2026-02-22 20:06:23.181 +05:30 [INF] Stripe session created for BookingId 5
-2026-02-22 20:06:56.360 +05:30 [INF] Payment successful for BookingId 5
-2026-02-22 20:06:56.832 +05:30 [INF] Booking 5 marked as PaymentConfirmed
-2026-02-22 20:07:09.501 +05:30 [INF] Booking 5 confirmed with Amadeus OrderId eJzTd9e3sIjwiXABAArRAlY
-2026-02-22 20:08:31.342 +05:30 [INF] Starting booking creation for FlightOfferId 1
-2026-02-22 20:08:32.311 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Booking'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
-2026-02-22 20:08:33.853 +05:30 [INF] Booking saved as Pending with BookingId 6
-2026-02-22 20:08:33.859 +05:30 [INF] Calling Amadeus pricing API for BookingId 6
-2026-02-22 20:08:35.552 +05:30 [INF] Pricing confirmed. BookingId 6 moved to AwaitingPayment
-2026-02-22 20:08:45.281 +05:30 [INF] Creating Stripe session for BookingId 6
-2026-02-22 20:08:47.327 +05:30 [INF] Stripe session created for BookingId 6
-2026-02-22 20:09:15.769 +05:30 [INF] Payment successful for BookingId 6
-2026-02-22 20:09:16.112 +05:30 [INF] Booking 6 marked as PaymentConfirmed
-2026-02-22 20:09:28.932 +05:30 [INF] Booking 6 confirmed with Amadeus OrderId eJzTd9e3sIiw9AoHAAqPAkg
+2026-02-22 22:31:58.530 +05:30 [INF] Starting booking creation for FlightOfferId 3
+2026-02-22 22:32:01.061 +05:30 [INF] Booking saved as Pending with BookingId 14
+2026-02-22 22:32:01.069 +05:30 [INF] Calling Amadeus pricing API for BookingId 14
+2026-02-22 22:32:03.042 +05:30 [INF] Pricing confirmed. BookingId 14 moved to AwaitingPayment
+2026-02-22 22:32:11.898 +05:30 [INF] Creating Stripe session for BookingId 14
+2026-02-22 22:32:13.735 +05:30 [INF] Stripe session created for BookingId 14
+2026-02-22 22:32:41.259 +05:30 [INF] Payment successful for BookingId 14
+2026-02-22 22:32:41.712 +05:30 [INF] Booking 14 marked as PaymentConfirmed
+2026-02-22 22:32:45.503 +05:30 [INF] Booking 14 confirmed with Amadeus OrderId eJzTd9e3sPR0t3QGAApMAiM
+2026-02-22 22:41:17.877 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Booking'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-02-22 22:41:19.893 +05:30 [WRN] Login failed. User not found: string
+2026-02-22 22:41:23.446 +05:30 [WRN] Login failed. User not found: string
+2026-02-22 22:41:24.378 +05:30 [WRN] Login failed. User not found: string
+2026-02-22 22:41:24.944 +05:30 [WRN] Login failed. User not found: string
+2026-02-22 22:41:25.520 +05:30 [WRN] Login failed. User not found: string

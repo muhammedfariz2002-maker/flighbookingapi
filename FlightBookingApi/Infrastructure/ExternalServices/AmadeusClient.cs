@@ -191,7 +191,10 @@ namespace FlightBookingApi.Infrastructure.ExternalServices
             var response = await _httpClient.SendAsync(request);
             var body = await response.Content.ReadAsStringAsync();
 
-            response.EnsureSuccessStatusCode();
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception($"Amadeus Order Error: {body}");
+            }
 
             return body;
         }
